@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pottery</title>
+
+    <link rel="stylesheet" href="style.css">
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.3/TweenMax.min.js"></script>
+</head>
+<body class="home">
+    <div class="wrapper">
+        <nav class="menu">
+            <div class="menu-logo">
+                <a href="index.html">CL</a>
+            </div>
+
+            <div class="menu-items">
+                 <div class="menu-items-link active">
+                    <a href="index.html">Products</a>
+                </div>
+
+                <div class="menu-items-link">
+                    <a href="about.html">About</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <div class="container-item container-item-header">
+                <h1>CLAYLAND, <br /> get authentic</h1>
+            </div>
+
+            <div class="container-item container-item-1">
+                <h1 class="container-item-title">
+                    <a href="product.html">Brackets</a>
+                </h1>
+            </div>
+
+            <div class="container-item container-item-2">
+                <h1 class="container-item-title">
+                    <a href="product.html">Pyramid</a>
+                </h1>
+            </div>
+
+            <div class="container-item container-item-3">
+                <h1 class="container-item-title">
+                    <a href="product.html">Backyard</a>
+                </h1>
+            </div>
+
+            <div class="container-item container-item-4">
+                <h1 class="container-item-title">
+                    <a href="product.html">Harmony</a>
+                </h1>
+            </div>
+
+            <div class="container-item container-item-5">
+                <h1 class="container-item-title">
+                    <a href="product.html">Pillow</a>
+                </h1>
+            </div>
+
+        </div>
+    </div>
+
+
+    <script src="horizontal-scroll.js"></script>
+    <script>
+        var blocks = document.getElementsByClassName("container-item");
+        var container = document.getElementsByClassName("container");
+        var hs = new HorizontalScroll.default({
+            blocks: blocks,
+            container: container,
+            isAnimated: true,
+            springEffect: 0.7,
+        });
+    </script>
+</body>
+</html>
